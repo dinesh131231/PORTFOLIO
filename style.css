@@ -1,0 +1,830 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+
+html {
+    overflow-x: hidden;
+
+}
+
+/* Smooth in-page navigation */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    width: auto;
+}
+
+main {
+    /* height: 100rem; */
+    background: radial-gradient(rgb(158, 21, 216) 20%, rgb(224, 217, 227)80%);
+
+
+}
+
+.hero {
+    top: 0;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    /* background: radial-gradient(rgb(158, 21, 216) 20%,rgb(224, 217, 227)80%) */
+}
+
+.mlogo {
+    height: 6.2em;
+    filter: drop-shadow(6px 6px 10px);
+
+}
+
+
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 5em;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-around;
+    top: 0;
+    position: sticky;
+    /* z-index: 1; */
+    border-radius: 7px;
+    box-shadow: 7px 2px 20px 2px;
+    background: linear-gradient(to left, rgb(0, 0, 0)20%, rgba(10, 29, 180, 0.656)80%);
+
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(189, 225, 29);
+    filter: drop-shadow(0px 0px 8px rgba(15, 169, 186, 0.918));
+    -webkit-text-stroke: 1px rgb(41, 221, 188);
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: red;
+
+}
+
+.dd_manue {
+    height: 100vh;
+    border-radius: 10px;
+    /* border: 2px solid black; */
+
+    width: 30vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* background-color: #ffffff; */
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(10px);
+    z-index: 3;
+    display: none;
+}
+
+.dd_manue span {
+    font-weight: bolder;
+    font-size: 25px;
+    color: rgb(255, 253, 253);
+
+}
+
+span.icon {
+    color: rgb(255, 255, 255);
+    font-size: 2.3em;
+    display: none;
+    /* position: absolute;
+    right: 30px; */
+}
+
+.detail {
+    margin-left: 8%;
+    margin-top: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    width: 40vw;
+
+
+}
+
+@keyframes slide_left {
+    from {
+        margin-left: 100%;
+        width: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.detail h1 {
+    font-size: 50px;
+    color: rgb(253, 253, 253);
+    margin-bottom: 20px;
+    animation: slide_left 3s linear infinite both running alternate;
+
+
+}
+
+span {
+    color: orange;
+}
+
+.detail p {
+    line-height: 22px;
+    color: rgb(14, 14, 15);
+    font-size: 20px;
+
+
+    filter: drop-shadow(yellow 4px 0px 3px);
+    font-weight: bold;
+    /* Typing animation moved to JavaScript for precise control */
+    font-family: monospace;
+
+
+
+}
+
+
+@keyframes slide_down {
+    from {
+        margin-left: 0%;
+
+    }
+
+    to {
+        margin-left: -100%;
+
+    }
+}
+
+@keyframes typeing {
+    from {
+        width: 0%;
+
+
+
+    }
+
+    to {
+        width: 150%;
+
+
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+
+    }
+}
+
+.detail a {
+    background-color: #212121;
+    box-shadow: inset 6px 6px 17px 0px white;
+    padding: 10px 18px;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    margin: 30px 0;
+
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.detail a:hover {
+    color: rgb(10, 10, 10);
+    background-color: yellow;
+    transition: 1s;
+    box-shadow: inset 15px 10px 13px rgb(207, 141, 48);
+}
+
+/* CV button in profile */
+.cv-btn {
+    background-color: #212121;
+    box-shadow: inset 6px 6px 17px 0px white;
+    padding: 10px 18px;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    margin: 16px 0;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cv-btn:hover {
+    color: rgb(10, 10, 10);
+    background-color: yellow;
+    transition: 0.4s;
+}
+
+.image {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+
+}
+
+.image img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+    filter: drop-shadow(0px 0px 10px rgb(236, 232, 12));
+
+}
+
+.image:hover .shape {
+    bottom: 40px;
+}
+
+.image:hover .boy {
+    left: 45%;
+
+}
+
+.main-prf {
+    min-height: 100vh;
+
+    margin: 0;
+    position: relative;
+    padding: 4px 0 4rem 0;
+    /* give some bottom space so the footer doesn't overlap */
+}
+
+.profile {
+    margin: 3em 8em;
+    top: 10em;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.profile-counters {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: nowrap;
+    /* keep counters in a single row */
+    overflow-x: auto;
+    /* allow horizontal scroll if viewport too small */
+}
+
+.profile-counters .counter {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 0.6rem 0.8rem;
+    border-radius: 8px;
+    min-width: 9rem;
+    /* slightly smaller so all three fit on smaller desktops */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.counter-label {
+    color: rgba(0, 0, 0, 0.65);
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+}
+
+.counter-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.counter-controls button {
+    padding: 0.25rem 0.6rem;
+    border-radius: 6px;
+    border: none;
+    background: #212121;
+    color: #fff;
+    cursor: pointer;
+}
+
+.counter-controls .count {
+    min-width: 2rem;
+    text-align: center;
+    font-weight: 800;
+}
+
+.counter .edit {
+    margin-top: 0.5rem;
+    padding: 0.25rem 0.6rem;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {}
+
+.profile .dp {
+    height: 15rem;
+    width: 15rem;
+    border: 2px solid black;
+    border-radius: 10rem;
+
+
+
+}
+
+.profile .dp img {
+
+    height: 15rem;
+    width: 15rem;
+
+    border-radius: 10rem;
+}
+
+.bio {
+
+    text-align: start;
+    line-height: 2em;
+    margin: 0 3em;
+    font-size: 24px;
+
+}
+
+.skill {
+    height: 100vh;
+    display: block;
+    padding-top: 2em;
+    /* margin-bottom: 5em; */
+}
+
+.skill .sklhldr {
+    border-radius: 8px;
+    width: calc(100% - 4em);
+    max-width: 60rem;
+    margin: 0.75rem 2rem;
+    box-shadow: inset 7px 8px 13px 0px rgb(241 234 225);
+    background-color: rgba(54, 12, 243, 0.06);
+    padding: 0.6rem 1rem;
+    display: block;
+}
+
+/* Header line showing skill name and percent */
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.skill-name {
+    font-size: 1.05rem;
+}
+
+.skill-percent {
+    font-size: 0.95rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* Progress bar container */
+.progress {
+    width: 100%;
+    height: 14px;
+    background: rgba(0, 0, 0, 0.08);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+/* Colored fill */
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #7b2be8, #1fb6ff);
+    width: 0%;
+    /* default, will be set inline or with JS if desired */
+    border-radius: 999px;
+    transition: width 1.2s ease-in-out;
+}
+
+/* Optional: animate bars on page load using a simple keyframe that sets width to their inline style value */
+@keyframes fillBar {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: var(--target, 50%);
+    }
+}
+
+.progress-bar.animate {
+    animation: fillBar 1s ease forwards;
+}
+
+.progress-bar {
+    /* When not animating, ensure the bar respects the target variable */
+    width: var(--target, 0%);
+}
+
+.hereme {
+
+    margin: 0 8em;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hereme .formd {
+    /* border: 2px solid black; */
+    width: 20em;
+    height: 20em;
+    background-color: rgba(0, 0, 0, 0.097);
+    border-radius: 2em;
+    display: flex;
+    line-height: 2em;
+
+    box-shadow: -2px -2px 20px;
+    position: relative;
+
+
+}
+
+.formd label {
+    position: relative;
+    left: 2.8em;
+    top: 3em;
+
+
+}
+
+.formd input {
+    height: 2.3em;
+    border-radius: 0.7em;
+    background-color: transparent;
+    border: none;
+
+    box-shadow: -2px -1px 4px 0px;
+
+}
+
+.formd input::placeholder {
+    color: rgb(57, 57, 60);
+    padding-left: 1em;
+}
+
+#mail {
+    display: block;
+    position: relative;
+    height: 10%;
+    width: 50%;
+
+}
+
+#name {
+    display: block;
+    position: relative;
+    height: 10%;
+    width: 50%;
+}
+
+#mobno {
+    width: 14em;
+    height: 10%;
+    width: 50%;
+
+}
+
+.footer {
+    /* height: 40rem; */
+    width: 100%;
+    background: radial-gradient(rgba(123, 32, 32, 0.966), rgb(17, 16, 17));
+    color: rgb(7, 7, 7);
+    text-align: center;
+    font-weight: bold;
+    clear: both;
+    /* ensure footer sits after floated/absolutely positioned content */
+    position: relative;
+    z-index: 2;
+    padding: 2.5rem 0;
+
+
+}
+
+.footer p {
+    padding: 1em;
+    font-size: 2em;
+    text-shadow: 0px 0px 2px yellow;
+    line-height: 1rem;
+}
+
+.footer h4 {
+    color: rgba(164, 171, 176, 0.495);
+}
+
+.footer hr {
+    /* leave 10px gap on both sides */
+    width: calc(100% - 20px);
+    margin: 3px 10px 0 10px;
+    border: 2px solid black;
+
+
+}
+
+.logo {
+
+    display: flex;
+    padding: 3em;
+    justify-content: center;
+
+
+
+}
+
+/* Click-triggered animation for footer logo */
+/* @keyframes logoPop {
+    0% { transform: scale(1); filter: drop-shadow(0 0 0 rgba(0,0,0,0)); }
+    50% { transform: scale(1.06); filter: drop-shadow(0 8px 20px rgba(0,0,0,0.15)); }
+    100% { transform: scale(1); filter: drop-shadow(0 0 0 rgba(0,0,0,0)); }
+}
+
+.logo.animate {
+    animation: logoPop 450ms ease-in-out forwards;
+} */
+
+.social {
+    margin: 2em;
+    padding: 1em;
+    border: 4px solid rgba(19, 19, 19, 0.845);
+    border-radius: 5em;
+    box-shadow: 10px 10px 10px;
+}
+
+/* Quick press effect for social icons */
+.social:active,
+.social.clicked {
+    transform: scale(0.92);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.12);
+    transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+
+
+
+/* Responsive Styles for Screens Up to 700px */
+@media screen and (max-width: 768px) {
+
+    body {
+        box-sizing: border-box;
+        height: 100%;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    /* Navigation Bar */
+    nav {
+        flex-direction: row;
+        height: auto;
+        padding: 10px 40px;
+        z-index: 5;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        position: absolute;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+        position: relative;
+
+    }
+
+    .mlogo {
+        margin-left: -1.3em;
+        margin-right: 1em;
+    }
+
+    .dd_manue {
+        left: 62vw;
+        position: absolute;
+        align-items: baseline;
+        padding: 10px 20px;
+        gap: 2em;
+        height: auto;
+        z-index: 10;
+        display: none;
+        /* z-index: ; */
+    }
+
+    span.icon {
+        display: contents;
+
+    }
+
+    /* Hero Section */
+    .hero {
+        height: auto;
+        padding: 20px;
+        position: relative;
+        text-align: center;
+    }
+
+    .detail {
+        /* place detail at the top for smaller screens */
+        position: relative;
+        top: 0;
+        margin: 1rem auto 0;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: auto;
+        text-align: center;
+    }
+
+    .detail h1 {
+        font-size: 2rem;
+        z-index: 0;
+    }
+
+    .detail p {
+        font-size: 1rem;
+    }
+
+    .image {
+        width: 100%;
+        height: 55vh;
+
+        /* height: auto; */
+        position: relative;
+        left: 0.3em;
+        /* text-align: center; */
+    }
+
+    .image img {
+
+        position: absolute;
+        box-sizing: border-box;
+        /* transform: none; */
+        /* height: auto; */
+        width: 100%;
+    }
+
+    .detail {
+        z-index: 10;
+        top: 0;
+    }
+
+    .detail a {
+        margin: 8em 4em 0em 1em;
+    }
+
+    /* Profile Section */
+    .profile {
+        flex-direction: column;
+        margin: 5em 1em;
+        text-align: center;
+    }
+
+    .profile .dp {
+        margin-bottom: 1em;
+    }
+
+    .bio {
+        margin: 1em;
+        font-size: 1.2rem;
+    }
+
+    .profile-counters {
+        display: grid;
+/* grid-template-rows: 1fr 1fr; */
+/* grid-template-columns: 1fr 1fr ; */
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .profile-counters .counter {
+        min-width: 10rem;
+    }
+.cv-btn{
+    margin-left: 12%;
+}
+.skill{
+    position: relative;
+    left: 10%;
+    height: 100vh;
+}
+    .skill .sklhldr {
+        margin: 0px 0px;
+    }
+
+
+    /* Contact Section */
+    .hereme {
+        height: 100vh;
+        margin: 0 1em;
+        padding: 1em;
+        display: flex;
+
+    }
+
+    .hereme .formd {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        position: relative;
+
+        padding: 1em;
+    }
+
+    .formd label {
+
+
+        position: relative;
+        line-height: 5;
+
+        /* left: 7.5em; */
+        top: 4em;
+    }
+
+    /* Footer Section */
+    .footer {
+        margin: 0;
+        padding: 0;
+        height: 50%;
+        width: 100vw;
+    }
+
+    .footer hr {
+
+        width: 100vw;
+        margin: 3px 0em;
+    }
+
+    .logo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social {
+        margin: 1em;
+    }
+}
+
+/* Mid-size screens: tablets and small laptops (between ~481px and 1024px) */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .hero { padding: 24px 12px; }
+    /* place detail near top and keep the slide animation readable */
+    .detail {
+        position: relative;
+        top: 0.5rem;
+        margin-left: 6%;
+        width: 56%;
+        text-align: left;
+        animation: slide_left 2.2s ease-in-out both;
+    }
+
+    .detail h1 { font-size: 2.4rem; }
+    .detail p { font-size: 1.05rem; line-height: 1.6rem; }
+
+    /* move image to the right side and scale down so it doesn't overlap detail */
+    .image {
+        position: relative;
+        left: auto;
+        bottom: auto;
+        width: 40%;
+        height: auto;
+        float: right;
+        margin-right: 4%;
+    }
+
+    .image img { position: relative; width: 100%; height: auto; transform: none; }
+}

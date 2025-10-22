@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portpholio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div id="home" class="hero">
+            <!-- navigation bar section -->
+            <section>
+                <nav>
+                    <img src="/src/Dinesh.png" alt="LOGO" class="mlogo">
+                    <ul>
+                        <li> <a href="#home">HOME</a></li>
+                        <li> <a href="#profile">PROFILE</a></li>
+                        <li> <a href="#skill">SKILL</a></li>
+                        <li> <a href="mailto:dineshsutar2005@gmail.com" target="_blank">SERVICES</a></li>
+                        <li> <a href="#footer">CONTACT ME</a></li>
+                    </ul>
+
+                    <!-- drope downmanue -->
+                    <ul class="dd_manue">
+                        <li onclick="close_icon()"><span>✕</span></li>
+                        <li> <a href="#home">HOME</a></li>
+                        <li> <a href="#profile">PROFILE</a></li>
+                        <li> <a href="#skill">SKILL</a></li>
+                        <li> <a href="mailto:dineshsutar2005@gmail.com" target="_blank">SERVICES</a></li>
+                        <li> <a href="#footer">CONTACT ME</a></li>
+                    </ul>
+                    <span onclick="clicked_icon()" class="icon">≡</span>
+                </nav>
+                <!-- drope downmanue -->
+
+            </section>
+            <!-- home section -->
+
+            <div class="detail">
+                <h1>I,m dinesh <span>sutar</span></h1>
+                <p>This is my personal portfolio website to show all details and work experiences in web developement
+
+                </p>
+                <!-- <a href="#">DOWNLOAD CV</a> -->
+            </div>
+            <div class="image">
+                <img src="/src/shapesArtboard-1-copy-5.png" alt="no image" class="shape">
+                <img src="/src/IMG-20241021-WA0017[1].png" alt="no image" class="boy">
+            </div>
+            </section>
+        </div>
+        <!-- main profile section -->
+        <section id="profile">
+            <div class="main-prf">
+                <div class="profile">
+                    <div class="dp">
+                        <img src="/src/port3.jpg" alt="">
+                    </div>
+                    <div class="bio">
+                        <P>NAME: DINESH SUTAR <br>
+                            JOB ROLE: WEB DEVLOPER <br>
+                            EXPERIENCES: FRESHER
+                        </P>
+                        <a class="cv-btn" href="/src/Dineshcv.pdf" download>DOWNLOAD CV</a>
+
+                        <!-- Profile counters: achievements, experience (years), internships -->
+                        <div class="profile-counters">
+                            <div class="counter" data-key="achievements">
+                                <div class="counter-label">Achievements</div>
+                                <div class="counter-controls">
+                                    <button class="dec">-</button>
+                                    <span class="count">0</span>
+                                    <button class="inc">+</button>
+                                </div>
+                                <button class="edit">Edit</button>
+                            </div>
+
+                            <div class="counter" data-key="experience">
+                                <div class="counter-label">Experience (yrs)</div>
+                                <div class="counter-controls">
+                                    <button class="dec">-</button>
+                                    <span class="count">0</span>
+                                    <button class="inc">+</button>
+                                </div>
+                                <button class="edit">Edit</button>
+                            </div>
+
+                            <div class="counter" data-key="internships">
+                                <div class="counter-label">Internships</div>
+                                <div class="counter-controls">
+                                    <button class="dec">-</button>
+                                    <span class="count">0</span>
+                                    <button class="inc">+</button>
+                                </div>
+                                <button class="edit">Edit</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+
+        <section class="skill-section">
+            <div id="skill" class="skill">
+
+                <div class="sklhldr">
+                    <div class="skill-header"><span class="skill-name">HTML</span><span class="skill-percent">90%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" data-target="90" role="progressbar" aria-label="HTML skill level"
+                            aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+                    </div>
+                </div>
+
+                <div class="sklhldr">
+                    <div class="skill-header"><span class="skill-name">CSS</span><span class="skill-percent">85%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" data-target="85" role="progressbar" aria-label="CSS skill level"
+                            aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+                    </div>
+                </div>
+
+                <div class="sklhldr">
+                    <div class="skill-header"><span class="skill-name">JAVASCRIPT</span><span
+                            class="skill-percent">75%</span></div>
+                    <div class="progress">
+                        <div class="progress-bar" data-target="75" role="progressbar"
+                            aria-label="JavaScript skill level" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sklhldr">
+                    <div class="skill-header"><span class="skill-name">C</span><span class="skill-percent">60%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" data-target="60" role="progressbar" aria-label="C skill level"
+                            aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+                    </div>
+                </div>
+
+                <div class="sklhldr">
+                    <div class="skill-header"><span class="skill-name">C++</span><span class="skill-percent">55%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" data-target="55" role="progressbar" aria-label="C++ skill level"
+                            aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+                    </div>
+                </div>
+
+                <div class="sklhldr">
+                    <div class="skill-header"><span class="skill-name">PYTHON</span><span
+                            class="skill-percent">70%</span></div>
+                    <div class="progress">
+                        <div class="progress-bar" data-target="70" role="progressbar" aria-label="Python skill level"
+                            aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </section>
+        <!-- contact us section -->
+        <!-- <section>
+            <div class="hereme">
+                <div class="formd">
+                    <form action="post">
+                        <label for="name">
+                            ENTER YOUR NAME
+                        </label>
+                        <LAbel><input type="text" id="name" placeholder=" your name"></LAbel>
+                        <label for="email">
+                            ENTER MAIL ID
+                        </label>
+                        <Label> <input type="text" id="mail" placeholder="enter email address"></label>
+                        <label for="mobno">MOBILE NUMBER</label>
+                        <label><input type="text" id="mobno" placeholder="enter your phone number"></label>
+
+                    </form>
+                </div>
+            </div>
+        </section> -->
+    </main>
+    <!-- footer section -->
+    <footer id="footer">
+        <div class="footer">
+            <p>CONTACT ME <br>
+            <h4>By following socialmedia accounts</h4>
+            </p>
+            <hr>
+            <hr>
+
+
+            <div class="logo">
+
+                <div class="facebook social">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                        viewBox="0 0 50 50">
+                        <path
+                            d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="instagram social">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                        viewBox="0 0 50 50">
+                        <path
+                            d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="whatsapp social">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                        viewBox="0 0 50 50">
+                        <path
+                            d="M25,2C12.318,2,2,12.318,2,25c0,3.96,1.023,7.854,2.963,11.29L2.037,46.73c-0.096,0.343-0.003,0.711,0.245,0.966 C2.473,47.893,2.733,48,3,48c0.08,0,0.161-0.01,0.24-0.029l10.896-2.699C17.463,47.058,21.21,48,25,48c12.682,0,23-10.318,23-23 S37.682,2,25,2z M36.57,33.116c-0.492,1.362-2.852,2.605-3.986,2.772c-1.018,0.149-2.306,0.213-3.72-0.231 c-0.857-0.27-1.957-0.628-3.366-1.229c-5.923-2.526-9.791-8.415-10.087-8.804C15.116,25.235,13,22.463,13,19.594 s1.525-4.28,2.067-4.864c0.542-0.584,1.181-0.73,1.575-0.73s0.787,0.005,1.132,0.021c0.363,0.018,0.85-0.137,1.329,1.001 c0.492,1.168,1.673,4.037,1.819,4.33c0.148,0.292,0.246,0.633,0.05,1.022c-0.196,0.389-0.294,0.632-0.59,0.973 s-0.62,0.76-0.886,1.022c-0.296,0.291-0.603,0.606-0.259,1.19c0.344,0.584,1.529,2.493,3.285,4.039 c2.255,1.986,4.158,2.602,4.748,2.894c0.59,0.292,0.935,0.243,1.279-0.146c0.344-0.39,1.476-1.703,1.869-2.286 s0.787-0.487,1.329-0.292c0.542,0.194,3.445,1.604,4.035,1.896c0.59,0.292,0.984,0.438,1.132,0.681 C37.062,30.587,37.062,31.755,36.57,33.116z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="github social">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.084-.73.084-.73 1.205.084 1.84 1.236 1.84 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.418-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.468-2.38 1.235-3.22-.123-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.12 3.176.77.84 1.233 1.91 1.233 3.22 0 4.61-2.804 5.625-5.475 5.92.43.37.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .32.216.694.825.576C20.565 22.092 24 17.592 24 12.297 24 5.67 18.627.297 12 .297z" />
+                    </svg>
+                </div>
+                <div class="linkedin social">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24">
+                        <!-- circular background matching LinkedIn brand -->
+                        <circle cx="15" cy="15" r="15" fill="#1111" />
+                        <!-- icon path in white on top of circle -->
+                        <path
+                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.85-3.037-1.851 0-2.134 1.446-2.134 2.941v5.665h-3.554V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.367-1.85 3.6 0 4.267 2.37 4.267 5.456v6.285zM5.337 7.433c-1.144 0-2.069-.926-2.069-2.07 0-1.144.925-2.07 2.069-2.07s2.07.926 2.07 2.07c0 1.144-.926 2.07-2.07 2.07zM6.916 20.452H3.76V9h3.156v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.729C24 .774 23.2 0 22.225 0z"
+                            fill="#111" />
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
