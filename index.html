@@ -14,7 +14,8 @@
             <!-- navigation bar section -->
             <section>
                 <nav>
-                    <img src="/src/Dinesh.png" alt="LOGO" class="mlogo">
+                    <h1>Dinesh</h1>
+                    <!-- <img src="/src/Dinesh.png" alt="LOGO" class="mlogo"> -->
                     <ul>
                         <li> <a href="#home">HOME</a></li>
                         <li> <a href="#profile">PROFILE</a></li>
@@ -24,10 +25,10 @@
                     </ul>
 
                     <!-- drope downmanue -->
-                    <ul class="dd_manue">
-                        <li onclick="close_icon()"><span>✕</span></li>
+                    <ul class="dd_manue" >
+                        <li onclick="close_icon()"><span id="s_icon">✕</span></li>
+                        <li > <a href="#profile">PROFILE</a></li>
                         <li> <a href="#home">HOME</a></li>
-                        <li> <a href="#profile">PROFILE</a></li>
                         <li> <a href="#skill">SKILL</a></li>
                         <li> <a href="mailto:dineshsutar2005@gmail.com" target="_blank">SERVICES</a></li>
                         <li> <a href="#footer">CONTACT ME</a></li>
@@ -44,64 +45,52 @@
                 <p>This is my personal portfolio website to show all details and work experiences in web developement
 
                 </p>
-                <!-- <a href="#">DOWNLOAD CV</a> -->
+                <a href="/src/dinesh new.pdf">DOWNLOAD CV</a>
             </div>
             <div class="image">
                 <img src="/src/shapesArtboard-1-copy-5.png" alt="no image" class="shape">
-                <img src="/src/IMG-20241021-WA0017[1].png" alt="no image" class="boy">
+                <img src="/src/WhatsApp Image 2025-12-25 at 6.28.18 PM_edited.png" alt="no image" class="boy">
             </div>
             </section>
         </div>
         <!-- main profile section -->
-        <section id="profile">
-            <div class="main-prf">
-                <div class="profile">
-                    <div class="dp">
-                        <img src="/src/port3.jpg" alt="">
-                    </div>
-                    <div class="bio">
-                        <P>NAME: DINESH SUTAR <br>
-                            JOB ROLE: WEB DEVLOPER <br>
-                            EXPERIENCES: FRESHER
-                        </P>
-                        <a class="cv-btn" href="/src/Dineshcv.pdf" download>DOWNLOAD CV</a>
-
-                        <!-- Profile counters: achievements, experience (years), internships -->
-                        <div class="profile-counters">
-                            <div class="counter" data-key="achievements">
-                                <div class="counter-label">Achievements</div>
-                                <div class="counter-controls">
-                                    <button class="dec">-</button>
-                                    <span class="count">0</span>
-                                    <button class="inc">+</button>
-                                </div>
-                                <button class="edit">Edit</button>
-                            </div>
-
-                            <div class="counter" data-key="experience">
-                                <div class="counter-label">Experience (yrs)</div>
-                                <div class="counter-controls">
-                                    <button class="dec">-</button>
-                                    <span class="count">0</span>
-                                    <button class="inc">+</button>
-                                </div>
-                                <button class="edit">Edit</button>
-                            </div>
-
-                            <div class="counter" data-key="internships">
-                                <div class="counter-label">Internships</div>
-                                <div class="counter-controls">
-                                    <button class="dec">-</button>
-                                    <span class="count">0</span>
-                                    <button class="inc">+</button>
-                                </div>
-                                <button class="edit">Edit</button>
-                            </div>
-                        </div>
-
-                    </div>
+          <section id="profile">
+        <div class="profile">
+            <div class="p_image">
+                <img src="/src/port3.jpg" alt="no img">
+            </div>
+            <div class="p_detail">
+                <div class="card edu">
+                    <span class="h_l">skill</span>
+                    <span class="s_cont"><ul>
+                        <li>web developement</li>
+                        <li>Problem solving</li>
+                        <li>Chat gpt</li>
+                        <li>Git</li>
+                        <li>Linux</li>
+                        <li>MERN</li>
+                    </ul> </span>
                 </div>
-        </section>
+                <div class="card achive">
+                    <span class="h_l">achivement</span>
+                    <span class="s_cont"><ul>
+                        <li>A food ordering website</li>
+                        <li>A language agnostic chat bot</li>
+                        <li>A clone netflix page</li>
+                    </ul></span>
+                </div>
+                <div class="card exp">
+                    <span class="h_l">education</span>
+                    <span class="s_cont"><ul>
+                        <li>+2 under   -CHSE</li>
+                        <li>BCA under  -UTAKAL UNIVERSITY</li>
+                        <li>MCA continue  -BPUT</li>
+                    </ul></span>
+                </div>
+            </div>
+        </div>
+    </section>
+       
 
         <section class="skill-section">
             <div id="skill" class="skill">
@@ -154,9 +143,9 @@
 
                 <div class="sklhldr">
                     <div class="skill-header"><span class="skill-name">PYTHON</span><span
-                            class="skill-percent">70%</span></div>
+                            class="skill-percent">30%</span></div>
                     <div class="progress">
-                        <div class="progress-bar" data-target="70" role="progressbar" aria-label="Python skill level"
+                        <div class="progress-bar" data-target="30" role="progressbar" aria-label="Python skill level"
                             aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
                         </div>
                     </div>

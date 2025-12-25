@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const fullText = para.textContent.trim();
   para.textContent = '';
 
-  const typingSpeed = 30; // ms per character (adjust for faster/slower)
+  const typingSpeed = 50; // ms per character (adjust for faster/slower)
 
   let index = 0;
   const type = () => {
