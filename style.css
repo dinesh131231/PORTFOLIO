@@ -309,73 +309,6 @@ span {
     overflow-x: hidden;
 }
 
-/* .profile {
-    /* margin: 3em 8em; */
-    /* top: 10em;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-/* } */ 
-
-/* .profile-counters {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
-    flex-wrap: nowrap;
-    /* keep counters in a single row */
-    /* overflow-x: auto;
-    /* allow horizontal scroll if viewport too small */
-/* } 
-
-.profile-counters .counter {
-    background: rgba(255, 255, 255, 0.03);
-    padding: 0.6rem 0.8rem;
-    border-radius: 8px;
-    min-width: 9rem;
-    /* slightly smaller so all three fit on smaller desktops */
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
-}  */
-
-/* .counter-label {
-    color: rgba(0, 0, 0, 0.65);
-    font-weight: 700;
-    margin-bottom: 0.4rem;
-}
-
-.counter-controls {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-}
-
-.counter-controls button {
-    padding: 0.25rem 0.6rem;
-    border-radius: 6px;
-    border: none;
-    background: #212121;
-    color: #fff;
-    cursor: pointer;
-}
-
-.counter-controls .count {
-    min-width: 2rem;
-    text-align: center;
-    font-weight: 800;
-}
-
-.counter .edit {
-    margin-top: 0.5rem;
-    padding: 0.25rem 0.6rem;
-    background: transparent;
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    border-radius: 6px;
-    cursor: pointer;
-} */ 
 
 @media screen and (max-width: 700px) {}
 
@@ -448,7 +381,7 @@ span {
     align-items: center;
     margin-bottom: 0.5rem;
     font-weight: 700;
-    color: #222;
+    color: #127fba;
 }
 
 .skill-name {
@@ -457,7 +390,7 @@ span {
 
 .skill-percent {
     font-size: 0.95rem;
-    color: rgba(0, 0, 0, 0.6);
+    color: rgb(29, 209, 19);
 }
 
 /* Progress bar container */
@@ -615,16 +548,6 @@ span {
 
 }
 
-/* Click-triggered animation for footer logo */
-/* @keyframes logoPop {
-    0% { transform: scale(1); filter: drop-shadow(0 0 0 rgba(0,0,0,0)); }
-    50% { transform: scale(1.06); filter: drop-shadow(0 8px 20px rgba(0,0,0,0.15)); }
-    100% { transform: scale(1); filter: drop-shadow(0 0 0 rgba(0,0,0,0)); }
-}
-
-.logo.animate {
-    animation: logoPop 450ms ease-in-out forwards;
-} */
 
 .social {
     margin: 2em;
@@ -997,7 +920,7 @@ filter: drop-shadow(2px 2px 8px blue);
     padding-left: 2em;
     display: flex;
     justify-content: start;
-    color:linear-gradient(to top red,blue,aqua) ;
+   
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
